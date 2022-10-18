@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- load MUI -->
+  <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="mui-container-fluid">
+    <div class="mui-appbar">
+      <div class="mui--text-display1 centralized">Практична робота 5</div>
+    </div>
+    <div class="mui-container-fluid">
+      <!-- Заголовок з описом Завдання 0 -->
+      <div class="task-header">
+        <strong>Завдання:</strong> Зашифрувати перші вісім літер своїх прізвища, імені та по-батькові за допомогою
+        алгоритму симетричного шифрування DES.
+      </div>
+      <div class="mui-textfield centralized">
+        <label>Текст для шифрування (великими літерами, за замовченням <strong>komarovo</strong>)</label>
+        <input class="centralized" type="text" id="taskText">
+      </div>
+      <div class="mui-textfield centralized">
+        <label>Ключ для шифрування (за замовченням <strong>password</strong>)</label>
+        <input class="centralized" type="text" id="taskKey">
+        <div class="centralized"><button type="submit" class="mui-btn mui-btn--primary mui-btn--raised"
+            onclick="generateKey()">Згенерувати</button>
+        </div>
+      </div>
+      <div class="mui-textfield centralized">
+        <label>Криптограма</label>
+        <input class="centralized" type="text" id="taskAnswer">
+      </div>
+      <div class="centralized"><button type="submit" class="mui-btn mui-btn--primary mui-btn--raised" onclick="submit(
+              document.getElementById('taskText').value.length == 0 ? undefined : 
+              document.getElementById('taskText').value, 
+              document.getElementById('taskKey').value.length == 0 ? undefined : 
+              document.getElementById('taskKey').value
+            )">Зашифрувати</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

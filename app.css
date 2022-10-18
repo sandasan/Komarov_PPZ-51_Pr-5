@@ -1,0 +1,33 @@
+.centralized {
+    text-align: center;
+}
+
+.task-header {
+    text-align: center;
+    font-size: 3vh;
+    padding: 3vh;
+}
+
+.task1-code-input {
+    margin: 4vh;
+}
+
+.task-description{
+    margin: 3vh;
+}
+
+.mui-table {
+    width: 30vw;
+}
+
+tr {
+    margin: -2vh;
+}
+
+.mui-table>tbody>tr>td, .mui-table>tbody>tr>th, .mui-table>tfoot>tr>td, .mui-table>tfoot>tr>th, .mui-table>thead>tr>td, .mui-table>thead>tr>th {
+    padding: 0;
+}
+
+tr .mui-textfield>input {
+    height: 3vh;
+}
